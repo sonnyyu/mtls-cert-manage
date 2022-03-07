@@ -32,6 +32,32 @@ easy-rsa init-pki
 easy-rsa build-ca
 easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.204" nopass
 ```
+# The certificate at pki directory
+```
+├── index.txt.attr.old
+├── index.txt.old
+├── issued
+│   └── 192.168.1.204.crt
+├── openssl-easyrsa.cnf
+├── private
+│   ├── 192.168.1.204.key
+│   └── ca.key
+├── renewed
+│   ├── certs_by_serial
+│   ├── private_by_serial
+│   └── reqs_by_serial
+├── reqs
+│   └── 192.168.1.204.req
+├── revoked
+│   ├── certs_by_serial
+│   ├── private_by_serial
+│   └── reqs_by_serial
+├── safessl-easyrsa.cnf
+├── serial
+└── serial.old
+```
+
+
 # Copy certificate back 
 ```bash
 sudo su
