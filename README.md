@@ -28,13 +28,17 @@ easy-rsa
 ```
 # Use it with:
 ```bash
-docker run -it --rm sonnyyu/nmap:7.92 -A scanme.nmap.org
-docker run -it --rm sonnyyu/nmap:7.92 -sT -T4 scanme.nmap.org
-docker run -it --rm sonnyyu/nmap:7.92 -oA scan -A scanme.nmap.org
-docker run -it --rm sonnyyu/nmap:7.92 --script-updatedb
-docker run -it --rm sonnyyu/nmap:7.92  -p 445 --script smb-os-discovery  192.168.1.71
-docker run -it --rm sonnyyu/nmap:7.92 -p445 --script smb-vuln-ms08-067 192.168.1.71
-docker run -it --rm sonnyyu/nmap:7.92 --script ssh-brute.nse 192.168.1.204
+easy-rsa init-pki
+easy-rsa build-ca
+easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.204" nopass
+sudo su
+cd pki/pki/issued
+openssl x509 -in 192.168.1.204.crt -text
+cp 192.168.1.204.crt /home/sonnyyu/easy-rsa
+cp 192.168.1.204.key /home/sonnyyu/easy-rsa
+cp ca.crt /home/sonnyyu/easy-rsa
+cd /home/sonnyyu/easy-rsa
+chmod 644 192.168.1.204.crt  192.168.1.204.key ca.crt
 ```
 
 
