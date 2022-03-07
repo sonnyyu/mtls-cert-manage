@@ -31,6 +31,9 @@ easy-rsa
 easy-rsa init-pki
 easy-rsa build-ca
 easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.204" nopass
+sudo su
+cd pki/pki/issued
+openssl x509 -in 192.168.1.204.crt -text
 ```
 
 
