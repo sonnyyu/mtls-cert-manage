@@ -22,7 +22,7 @@ nano  ~/.bashrc
 alias easy-rsa="docker run -it --rm -v ~/easy-rsa/pki:/pki sonnyyu/easy-rsa:3"
 source ~/.bashrc 
 ```
-# Run with nmap
+# Run with easy-rsa
 ```bash
 easy-rsa
 ```
