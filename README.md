@@ -79,14 +79,12 @@ server {
 
 # Copy certificate back 
 ```bash
-sudo su
-cd pki/pki/issued
-openssl x509 -in 192.168.1.204.crt -text
-cp 192.168.1.204.crt /home/sonnyyu/easy-rsa
-cp 192.168.1.204.key /home/sonnyyu/easy-rsa
-cp ca.crt /home/sonnyyu/easy-rsa
-cd /home/sonnyyu/easy-rsa
-chmod 644 192.168.1.204.crt  192.168.1.204.key ca.crt
+export workdir=~/easy-rsa
+sudo -E cp $workdir/pki/pki/ca.crt $workdir 
+sudo -E cp $workdir/pki/pki/private/client1.p12 $workdir
+sudo -E cp $workdir/pki/pki/private/192.168.1.204.key  $workdir
+sudo -E cp $workdir/pki/pki/issued/192.168.1.204.crt $workdir
+sudo chmod 644  192.168.1.204.crt 192.168.1.204.key ca.crt client1.p12
 ```
 # Getting started nginx with certificate
 ```bash
