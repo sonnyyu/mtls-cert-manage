@@ -3,14 +3,13 @@
 https://github.com/sonnyyu/easy-rsa
 cd easy-rsa
 docker build -t easy-rsa .
-docker tag easy-rsa sonnyyu/easy-rsa
-docker tag nmap:latest  sonnyyu/nmap:7.92
+docker tag easy-rsa sonnyyu/easy-rsa:3
 #docker login
-docker push sonnyyu/nmap:7.92
+docker push sonnyyu/easy-rsa:3
 ```
 # Grab it from dockerhub:
 ```bash
-docker pull sonnyyu/nmap:7.92
+docker pull sonnyyu/easy-rsa:3
 ```
 # Test it:
 ```bash
