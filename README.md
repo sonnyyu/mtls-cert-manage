@@ -34,6 +34,11 @@ easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.20
 ```
 # The certificate at pki directory
 ```
+├── ca.crt
+├── certs_by_serial
+│   └── 86F1FF8296AC23318EE61CDD28253DB0.pem
+├── index.txt
+├── index.txt.attr
 ├── index.txt.attr.old
 ├── index.txt.old
 ├── issued
@@ -56,8 +61,6 @@ easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.20
 ├── serial
 └── serial.old
 ```
-
-
 # Copy certificate back 
 ```bash
 sudo su
