@@ -61,6 +61,19 @@ easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.20
 ├── serial
 └── serial.old
 ```
+```
+server {
+  listen 443 ssl;
+  ssl_certificate /etc/nginx/conf.d/192.168.1.204.crt;
+  ssl_certificate_key /etc/nginx/conf.d/192.168.1.204.key;
+  location / {
+	#
+     root   /usr/share/nginx/html;
+     index  index.html index.htm;
+ }
+}
+```
+
 # Copy certificate back 
 ```bash
 sudo su
