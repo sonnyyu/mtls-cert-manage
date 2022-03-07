@@ -15,6 +15,17 @@ docker pull sonnyyu/easy-rsa:3
 ```bash
 docker run -it --rm -v ~/easy-rsa/pki:/pki sonnyyu/easy-rsa:3
 ```
+# Setup alias
+```bash
+nano  ~/.bashrc
+#My custom aliases
+alias easy-rsa="docker run -it --rm -v ~/easy-rsa/pki:/pki sonnyyu/easy-rsa:3"
+source ~/.bashrc 
+```
+# Run with nmap
+```bash
+easy-rsa
+```
 # Use it with:
 ```bash
 docker run -it --rm sonnyyu/nmap:7.92 -A scanme.nmap.org
@@ -25,15 +36,5 @@ docker run -it --rm sonnyyu/nmap:7.92  -p 445 --script smb-os-discovery  192.168
 docker run -it --rm sonnyyu/nmap:7.92 -p445 --script smb-vuln-ms08-067 192.168.1.71
 docker run -it --rm sonnyyu/nmap:7.92 --script ssh-brute.nse 192.168.1.204
 ```
-# Setup alias
-```bash
-nano  ~/.bashrc
-#My custom aliases
-alias nmap="docker run -it --rm sonnyyu/nmap:7.92"
-source ~/.bashrc 
-```
-# Run with nmap
-```bash
-nmap -V
-```
+
 
