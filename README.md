@@ -31,6 +31,8 @@ easy-rsa
 easy-rsa init-pki
 easy-rsa build-ca
 easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.204" nopass
+easy-rsa build-client-full client1
+easy-rsa export-p12  client1
 ```
 # The certificate at pki directory
 ```
