@@ -13,8 +13,7 @@ docker pull sonnyyu/easy-rsa:3
 ```
 # Test it:
 ```bash
-docker run -it --rm sonnyyu/nmap:7.92 --help
-docker run -it --rm sonnyyu/nmap:7.92 -V
+docker run -it --rm -v ~/easy-rsa/pki:/pki sonnyyu/easy-rsa:3
 ```
 # Use it with:
 ```bash
