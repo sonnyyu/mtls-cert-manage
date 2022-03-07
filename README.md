@@ -34,6 +34,11 @@ easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.20
 sudo su
 cd pki/pki/issued
 openssl x509 -in 192.168.1.204.crt -text
+cp 192.168.1.204.crt /home/sonnyyu/easy-rsa
+cp 192.168.1.204.key /home/sonnyyu/easy-rsa
+cp ca.crt /home/sonnyyu/easy-rsa
+cd /home/sonnyyu/easy-rsa
+chmod 644 192.168.1.204.crt  192.168.1.204.key ca.crt
 ```
 
 
