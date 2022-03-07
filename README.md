@@ -61,6 +61,7 @@ easy-rsa build-server-full "192.168.1.204" --alternate-san-name="IP:192.168.1.20
 ├── serial
 └── serial.old
 ```
+# nginx/conf/ssl.conf
 ```
 server {
   listen 443 ssl;
