@@ -33,7 +33,18 @@ easy-rsa build-ca
 easy-rsa --subject-alt-name="DNS:www.test.com,IP:192.168.1.204"  build-server-full localhost
 easy-rsa build-client-full client1
 easy-rsa export-p12  client1
-
+```
+# move all the certificate to local directory
+```bash
+export workdir=~/easy-rsa
+sudo -E cp $workdir/pki/pki/ca.crt $workdir/cert 
+sudo -E cp $workdir/pki/pki/private/client1.key $workdir/cert
+sudo -E cp $workdir/pki/pki/private/client1.p12 $workdir/cert
+sudo -E cp $workdir/pki/pki/issued/client1.crt $workdir/cert
+sudo -E cp $workdir/pki/pki/private/localhost.key  $workdir/cert
+sudo -E cp $workdir/pki/pki/issued/localhost.crt $workdir/cert
+cd $workdir/cert
+sudo chmod 644  *
 ```
 # The certificate at pki directory
 ```
