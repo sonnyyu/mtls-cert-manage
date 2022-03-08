@@ -88,17 +88,6 @@ server {
  }
 }
 ```
-
-# Copy certificate back 
-```bash
-export workdir=~/easy-rsa
-sudo -E cp $workdir/pki/pki/ca.crt $workdir 
-sudo -E cp $workdir/pki/pki/private/client1.p12 $workdir
-sudo -E cp $workdir/pki/pki/issued/client1.crt $workdir
-sudo -E cp $workdir/pki/pki/private/192.168.1.204.key  $workdir
-sudo -E cp $workdir/pki/pki/issued/192.168.1.204.crt $workdir
-sudo chmod 644  192.168.1.204.crt 192.168.1.204.key ca.crt client1.p12 client1.crt
-```
 # Getting started nginx with certificate
 ```bash
 docker-compose up -d
