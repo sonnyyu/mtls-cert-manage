@@ -31,7 +31,7 @@ easy-rsa
 easy-rsa init-pki
 easy-rsa build-ca
 easy-rsa --subject-alt-name="DNS:www.test.com,IP:192.168.1.204"  build-server-full localhost nopass
-easy-rsa build-client-full client1
+easy-rsa build-client-full client1 nopass
 easy-rsa export-p12  client1
 ```
 # Move all the certificate to local directory
