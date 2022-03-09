@@ -1,6 +1,6 @@
 # Build it:
 ```bash
-https://github.com/sonnyyu/mtls-cert-manage
+git clone https://github.com/sonnyyu/mtls-cert-manage
 cd mtls-cert-manage
 docker build -t easy-rsa .
 docker tag easy-rsa sonnyyu/easy-rsa:3
