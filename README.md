@@ -48,10 +48,10 @@ sudo chmod 644  *
 ```
 ### Install Certificate at Windows
 
--[How to import CA Certificate in Windows](https://community.spiceworks.com/how_to/1839-installing-self-signed-ca-certificate-in-windows)
--[How to import client certificate to the Chrome](https://www.wipo.int/pct-safe/en/support/cert_import_backup_chrome.html)
--[How to import client certificate to the Firefox](https://doc.primekey.com/ejbca-cloud/ejbca-cloud-aws/quick-start-guide/import-certificate-to-mozilla-firefox)
--[How to import client certificate to the Microsoft Edge](https://www.wipo.int/pct-safe/en/support/cert_import_backup_edge.html)
+- [How to import CA Certificate in Windows](https://community.spiceworks.com/how_to/1839-installing-self-signed-ca-certificate-in-windows)
+- [How to import client certificate to the Chrome](https://www.wipo.int/pct-safe/en/support/cert_import_backup_chrome.html)
+- [How to import client certificate to the Firefox](https://doc.primekey.com/ejbca-cloud/ejbca-cloud-aws/quick-start-guide/import-certificate-to-mozilla-firefox)
+- [How to import client certificate to the Microsoft Edge](https://www.wipo.int/pct-safe/en/support/cert_import_backup_edge.html)
 
 
 
