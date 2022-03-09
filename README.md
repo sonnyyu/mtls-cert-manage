@@ -13,13 +13,13 @@ docker pull sonnyyu/easy-rsa:3
 ```
 # Test it:
 ```bash
-docker run -it --rm -v ~/easy-rsa/pki:/pki sonnyyu/easy-rsa:3
+docker run -it --rm -v ~/mtls-cert-manage/pki:/pki sonnyyu/easy-rsa:3
 ```
 # Setup alias
 ```bash
 nano  ~/.bashrc
 #My custom aliases
-alias easy-rsa="docker run -it --rm -v ~/easy-rsa/pki:/pki sonnyyu/easy-rsa:3"
+alias easy-rsa="docker run -it --rm -v ~/mtls-cert-manage/pki:/pki sonnyyu/easy-rsa:3"
 source ~/.bashrc 
 ```
 # Run with easy-rsa
