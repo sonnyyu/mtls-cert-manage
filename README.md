@@ -1,4 +1,4 @@
-# Build it:
+# Build docker image (optional):
 ```bash
 git clone https://github.com/sonnyyu/mtls-cert-manage
 cd mtls-cert-manage
