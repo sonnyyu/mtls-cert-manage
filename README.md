@@ -31,12 +31,12 @@ easy-rsa
 easy-rsa init-pki
 easy-rsa build-ca
 easy-rsa --subject-alt-name="DNS:www.test.com,IP:192.168.1.204"  build-server-full localhost nopass
-easy-rsa build-client-full client1 nopass
+easy-rsa build-client-full client1 
 easy-rsa export-p12  client1
 ```
 # Move all the certificate to local directory
 ```bash
-export workdir=~/easy-rsa
+export workdir=~/mtls-cert-manage
 sudo -E cp $workdir/pki/pki/ca.crt $workdir/cert 
 sudo -E cp $workdir/pki/pki/private/client1.key $workdir/cert
 sudo -E cp $workdir/pki/pki/private/client1.p12 $workdir/cert
