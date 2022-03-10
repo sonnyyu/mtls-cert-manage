@@ -47,7 +47,7 @@ cd $workdir/cert
 sudo chmod 644  *
 ```
 Note: 
-- client1.p12 is client p12 file
+- client1.p12 is client p12 file (client certificate)
 - ca.crt is CA Certificate 
 
 ### Install Certificate at Windows
