@@ -46,6 +46,10 @@ sudo -E cp $workdir/pki/pki/issued/localhost.crt $workdir/cert
 cd $workdir/cert
 sudo chmod 644  *
 ```
+Note: 
+- client1.p12 is client p12 file
+- ca.crt is CA Certificate 
+
 ### Install Certificate at Windows
 
 - [How to import CA Certificate in Windows](https://community.spiceworks.com/how_to/1839-installing-self-signed-ca-certificate-in-windows)
