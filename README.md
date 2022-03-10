@@ -62,6 +62,9 @@ Note:
 - [How to import CA Certificate in Mac OS X](https://www.eduhk.hk/ocio/content/faq-how-add-root-certificate-mac-os-x)
 - [How to import client certificate to the Chrome Mac OS X](https://www.comodo.com/support/products/authentication_certs/setup/mac_chrome.php)
 - [How to import client certificate to the Firefox Mac OS X](https://www.digicert.com/kb/ssl-support/personal-ids/import-into-firefox-mac.htm)
+- [How to import client certificate to the Safari Mac OS X](https://www.digicert.com/kb/ssl-support/p12-import-export-mac-server.htm)
+
+
 
 
 
