@@ -82,6 +82,10 @@ Note:
 ### Install Certificate at Linux (Ubuntu, Debian)
 - [How to import CA Certificate in Linux (Ubuntu, Debian)](https://grumpytechie.net/2020/02/25/adding-custom-root-ca-certificates-to-debian/)
 
+### Install Certificate at Linux (CentOS, Red Hat)
+- [How to import CA Certificate in Linux (CentOS, Red Hat)](https://it.megocollector.com/tips-and-tricks/add-root-certificates-to-a-centos-linux-server/)
+
+
 
 
 
