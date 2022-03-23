@@ -79,6 +79,9 @@ Note:
 - [How to import client certificate to the Firefox Mac OS X](https://www.digicert.com/kb/ssl-support/personal-ids/import-into-firefox-mac.htm)
 - [How to import client certificate to the Safari Mac OS X](https://www.digicert.com/kb/ssl-support/p12-import-export-mac-server.htm)
 
+### Install Certificate at Linux (Ubuntu, Debian)
+- [How to import CA Certificate in Linux (Ubuntu, Debian)](https://grumpytechie.net/2020/02/25/adding-custom-root-ca-certificates-to-debian/)
+
 
 
 
