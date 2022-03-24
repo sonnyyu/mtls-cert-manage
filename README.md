@@ -1,35 +1,30 @@
-# Build docker image (optional):
+# Download easyrsa
 ```bash
-git clone https://github.com/sonnyyu/mtls-cert-manage
-cd mtls-cert-manage
-docker build -t easy-rsa .
-docker tag easy-rsa sonnyyu/easy-rsa:3
-#docker login
-docker push sonnyyu/easy-rsa:3
-```
-# Grab it from dockerhub:
-```bash
-docker pull sonnyyu/easy-rsa:3
+git clone https://github.com/OpenVPN/easy-rsa
+sudo ln -s /home/sonnyyu/easy-rsa/easyrsa3/easyrsa /usr/bin/easyrsa
 ```
 # Test it:
 ```bash
-docker run -it --rm -v ~/mtls-cert-manage/pki:/pki sonnyyu/easy-rsa:3
+easyrsa
 ```
-# Setup alias
+# Down load software:
 ```bash
-nano  ~/.bashrc
-#My custom aliases
-alias easy-rsa="docker run -it --rm -v ~/mtls-cert-manage/pki:/pki sonnyyu/easy-rsa:3"
-source ~/.bashrc 
+git clone https://github.com/sonnyyu/mtls-cert-manage/
+cd ~/mtls-cert-manage/pki
 ```
-# Run with easy-rsa
+# Build ca
 ```bash
-easy-rsa
+easyrsa init-pki
+easyrsa build-ca
 ```
-# Use it with:
+# Build server pem for splunk
 ```bash
-easy-rsa init-pki
-easy-rsa build-ca
+easyrsa init-pki
+easyrsa build-ca
+```
+
+# to do
+```bash
 easy-rsa --subject-alt-name="DNS:www.test.com,IP:192.168.1.204"  build-server-full localhost nopass
 easy-rsa build-client-full client1 
 easy-rsa export-p12  client1
