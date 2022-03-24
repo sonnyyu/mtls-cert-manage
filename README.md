@@ -17,6 +17,10 @@ cd ~/mtls-cert-manage/pki
 easyrsa init-pki
 easyrsa build-ca
 ```
+# Update capassfile base on password use at build-ca
+```bash
+nano capassfile
+```
 # Build server pem for splunk
 ```bash
 ./splunk.sh
