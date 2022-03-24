@@ -12,7 +12,7 @@ easyrsa
 git clone https://github.com/sonnyyu/mtls-cert-manage/
 cd ~/mtls-cert-manage/pki
 ```
-# Build ca
+# init-pki & build ca
 ```bash
 easyrsa init-pki
 easyrsa build-ca
