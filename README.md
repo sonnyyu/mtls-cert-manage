@@ -19,8 +19,7 @@ easyrsa build-ca
 ```
 # Build server pem for splunk
 ```bash
-easyrsa init-pki
-easyrsa build-ca
+./splunk.sh
 ```
 
 # to do
