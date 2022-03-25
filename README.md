@@ -10,10 +10,10 @@ easyrsa
 # Down load software:
 ```bash
 git clone https://github.com/sonnyyu/mtls-cert-manage/
-cd ~/mtls-cert-manage/pki
 ```
 # init-pki & build ca
 ```bash
+cd ~/mtls-cert-manage/pki
 easyrsa init-pki
 easyrsa build-ca
 ```
