@@ -29,7 +29,7 @@ nano capassfile
 ```bash
 ./haproxy.sh
 ```
-# Build client pem without password
+# Build client pem without private key password
 ```bash
 ./client.sh
 ```
