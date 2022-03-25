@@ -29,6 +29,10 @@ nano capassfile
 ```bash
 ./haproxy.sh
 ```
+# Update p12passfile base on password use for p12 export
+```bash
+nano p12passfile
+```
 # Build client pem without private key password
 ```bash
 ./client.sh
