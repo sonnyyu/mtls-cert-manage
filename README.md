@@ -21,7 +21,7 @@ easyrsa build-ca
 ```bash
 nano capassfile
 ```
-# Build server pem for splunk
+# Build server pem for Splunk
 ```bash
 ./splunk.sh
 ```
