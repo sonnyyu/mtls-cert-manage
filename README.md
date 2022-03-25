@@ -68,3 +68,5 @@ Note:
 
 ### Install Certificate at Linux (CentOS, Red Hat)
 - [How to import CA Certificate in Linux (CentOS, Red Hat)](https://it.megocollector.com/tips-and-tricks/add-root-certificates-to-a-centos-linux-server/)
+
+Secure TLS protocol and cipher configurations for webservers can be generated using Mozilla's [SSL Configuration Generator](https://ssl-config.mozilla.org/). All supported browsers and the Mobile apps are known to work with the "Modern" configuration.
