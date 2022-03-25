@@ -37,6 +37,15 @@ nano p12passfile
 ```bash
 ./client.sh
 ```
+# Update cppassfile base on password use for client private key
+```bash
+nano cppassfile
+```
+# Build client pem with private key password
+```bash
+./clientpw.sh
+```
+
 
 # to do
 ```bash
