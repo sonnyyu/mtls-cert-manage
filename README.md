@@ -45,41 +45,6 @@ nano cppassfile
 ```bash
 ./clientpw.sh
 ```
-
-
-# to do
-```bash
-easy-rsa --subject-alt-name="DNS:www.test.com,IP:192.168.1.204"  build-server-full localhost nopass
-easy-rsa build-client-full client1 
-easy-rsa export-p12  client1
-```
-# Copy all the certificate to local directory
-```bash
-export workdir=~/mtls-cert-manage
-sudo -E cp $workdir/pki/pki/ca.crt $workdir/certs 
-sudo -E cp $workdir/pki/pki/private/client1.key $workdir/certs
-sudo -E cp $workdir/pki/pki/private/client1.p12 $workdir/certs
-sudo -E cp $workdir/pki/pki/issued/client1.crt $workdir/certs
-sudo -E cp $workdir/pki/pki/private/localhost.key  $workdir/certs
-sudo -E cp $workdir/pki/pki/issued/localhost.crt $workdir/certs
-cd $workdir/certs
-sudo chmod 644  *
-```
-# Make server certificate for 192.168.1.203
-```bash
-easy-rsa --subject-alt-name="DNS:www.test.com,IP:192.168.1.203"  build-server-full 192.168.1.203 nopass
-export workdir=~/mtls-cert-manage
-sudo -E cp $workdir/pki/pki/private/192.168.1.203.key  $workdir/certs
-sudo -E cp $workdir/pki/pki/issued/192.168.1.203.crt $workdir/certs
-cd $workdir/certs
-sudo chmod 644  *
-# show  certificate
-openssl x509 -in  192.168.1.203.crt -text
-# add password into private key
-openssl rsa -aes256 -in 192.168.1.203.key -out 192.168.1.203.pw.key
-# convert crt to pem
-openssl x509 -inform PEM -in 192.168.1.203.crt > 192.168.1.203.pem
-```
 Note: 
 - client1.p12 is client p12 file (client certificate)
 - ca.crt is CA Certificate 
