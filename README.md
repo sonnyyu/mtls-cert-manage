@@ -25,6 +25,14 @@ nano capassfile
 ```bash
 ./splunk.sh
 ```
+# Build server pem for Haproxy
+```bash
+./haproxy.sh
+```
+# Build client pem without password
+```bash
+./client.sh
+```
 
 # to do
 ```bash
