@@ -15,6 +15,7 @@ git clone https://github.com/sonnyyu/mtls-cert-manage/
 ```bash
 cd ~/mtls-cert-manage/pki
 easyrsa init-pki
+easyrsa gen-dh
 easyrsa build-ca
 ```
 # Update capassfile base on password use at build-ca
